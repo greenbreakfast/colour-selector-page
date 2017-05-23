@@ -1,0 +1,21 @@
+{
+  "name": "jevoisColorTracker",
+  "authors": [
+    "greenbreakfast <lazardemin@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "tinycolor": "^1.4.1"
+  }
+}

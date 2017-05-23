@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Script Tutorials" />
+        <title>JeVois Object Tracker Colour Picker</title>
+
+        <!-- add styles -->
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+
+        <!-- add scripts -->
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+        <script type='text/javascript' src='bower_components/tinycolor/tinycolor.js'></script>
+        <script src="js/assets/mows.js"></script>
+    </head>
+    <body>
+        <header>
+            <h2>JeVois Object Tracker Colour Picker</h2>
+        </header>
+
+        <div class="container">
+
+            <div>
+                <div>
+                    <form class="pure-form">
+                        <fieldset>
+                            <legend>MQTT broker on websocket</legend>
+                            <label>
+                              Address:
+                              <input type="text" class="mqtt-input input-broker-ws" value="ws://test.mosquitto.org:8080/mqtt"></label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Connect / Disconnect</legend>
+                            <button class="pure-button btn-connect">connect</button>
+                            <button class="pure-button btn-disconnect">disconnect</button>
+                        </fieldset>
+                    </form>
+
+
+                    
+                </div>
+            </div>
+
+            <br>
+            <p>Select the colour you would like to track
+            </p>
+
+            <!-- preview element -->
+            <div class="preview"></div>
+
+            <!-- colorpicker element -->
+            <div class="colorpicker" style="">
+                <canvas id="picker" var="4" width="300" height="300"></canvas>
+
+                <div class="controls">
+                    <div><label>R</label> <input type="text" id="rVal" /></div>
+                    <div><label>G</label> <input type="text" id="gVal" /></div>
+                    <div><label>B</label> <input type="text" id="bVal" /></div>
+                    <div><label>RGB</label> <input type="text" id="rgbVal" /></div>
+                    <div><label>HEX</label> <input type="text" id="hexVal" /></div>
+                    <div>
+                        <label>HSV</label>
+                        <br>H<input type="text" id="hsvH" />
+                        <br>S<input type="text" id="hsvS" />
+                        <br>V<input type="text" id="hsvV" />
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div><label>MQTT WS Address:</label> 
+                    <input type="text" class="input-broker-ws" value="ws://test.mosquitto.org:8080/mqtt"><
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
