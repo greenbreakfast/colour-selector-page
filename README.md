@@ -39,3 +39,13 @@ listener 9001 0.0.0.0
 protocol websockets
 ```
 
+Soft link the `www` directory to `/www/jevois`
+
+TODO: indtructions for bower...
+
+### Operation
+
+Browse to `http://omega-xxxx.local/jevois`
+
+To connect to the Omega's MQTT broker, connect to: `ws://omega-xxxx.local/mqtt`
+
