@@ -16,6 +16,12 @@ This can be run on the Onion Omega2
 
 ### Installation
 
+Open `/etc/opkg/distfeeds.conf` and uncomment
+
+```
+src/gz reboot_packages http://downloads.lede-project.org/snapshots/packages/mipsel_24kc/packages
+```
+
 Install packages:
 ```
 opkg update
@@ -39,13 +45,19 @@ listener 9001 0.0.0.0
 protocol websockets
 ```
 
-Soft link the `www` directory to `/www/jevois`
+Soft link the `www` directory to `/www/jevois`:
 
-TODO: indtructions for bower...
+```
+ln -s /root/colour-selector-page/www/ /www/jevois
+```
+
+TODO: instructions for bower...
 
 ### Operation
 
 Browse to `http://omega-xxxx.local/jevois`
 
-To connect to the Omega's MQTT broker, connect to: `ws://omega-xxxx.local/mqtt`
+To connect to the Omega's MQTT broker, connect to: `ws://omega-xxxx.local:9001/mqtt`
+
+
 
